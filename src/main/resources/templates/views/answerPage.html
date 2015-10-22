@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="zh">
+    <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8"/>
+    <title>答题界面</title>
+    <link rel="stylesheet" href="/css/answerPage.css">
+</head>
+<body style="background-color: #FFFFFF">
+<div class="top">
+    <div class="top_content">
+        <h2 class="questionType">必答题</h2>
+
+        <p class="userActive">用时:<p th:text="${choicequestion.getQuestion()}"></p>
+            ; 剩余题目数量: ;</p>
+    </div>
+</div>
+
+<div class="daohang">
+    <ul>
+        <li><a href="#q1">01</a> <a href="#q2">02</a></li>
+        <li><a href="#q3">03</a> <a href="#">04</a></li>
+        <li><a href="#">05</a> <a href="#">06</a></li>
+        <li><a href="#">07</a> <a href="#">08</a></li>
+        <li><a href="#">09</a> <a href="#">10</a></li>
+        <li><a href="#">11</a> <a href="#">12</a></li>
+        <li><a href="#">13</a> <a href="#">14</a></li>
+        <li><a href="#">15</a> <a href="#">16</a></li>
+        <li><a href="#">17</a> <a href="#">18</a></li>
+        <li><a href="#">9</a> <a href="#">20</a></li>
+    </ul>
+</div>
+
+<form>
+    <div class="body">
+        <!--<div class="body_img"></div>-->
+        <div class="body_content">
+            <a class="question" name="q1" id="q1">
+                <span class="placeholder"></span>
+                1.你最喜欢的水果是?
+            </a>
+
+            <div class="Option">
+                <label>
+                    <input type="radio" name="question1"/>
+                </label>A.苹果<br/>
+                <label>
+                    <input type="radio" name="question1"/>
+                </label>B.橘子<br/>
+                <label>
+                    <input type="radio" name="question1"/>
+                </label>C.西瓜<br/>
+                <label>
+                    <input type="radio" name="question1"/>
+                </label>D.玉米<br/>
+            </div>
+        </div>
+        <div class="body_content">
+            <a class="question" name="q2" id="q2">
+                <span class="placeholder"></span>
+                2.你最喜欢的水果是?
+            </a>
+
+            <div class="Option">
+                <label>
+                    <input type="radio" name="question2">
+                </label>A.苹果<br/>
+                <label>
+                    <input type="radio" name="question2">
+                </label>B.橘子<br/>
+                <label>
+                    <input type="radio" name="question2">
+                </label>C.西瓜<br/>
+                <label>
+                    <input type="radio" name="question2">
+                </label>D.玉米<br/>
+            </div>
+        </div>
+        <div class="body_content">
+            <a class="question" name="q3" id="q3">
+                <span class="placeholder"></span>
+                3.你最喜欢的水果是?
+            </a>
+
+            <div class="Option">
+                <label>
+                    <input type="radio" name="question3">
+                </label>A.苹果<br/>
+                <label>
+                    <input type="radio" name="question3">
+                </label>B.橘子<br/>
+                <label>
+                    <input type="radio" name="question3">
+                </label>C.西瓜<br/>
+                <label>
+                    <input type="radio" name="question3">
+                </label>D.玉米<br/>
+            </div>
+        </div>
+        <div class="footing">
+            <input type="submit" value="确认提交">
+        </div>
+    </div>
+
+</form>
+<!--<div class="footing">
+    <div class="footing_content"></div>
+    <div class="footing_subnav"></div>
+</div>-->
+</body>
+</html>

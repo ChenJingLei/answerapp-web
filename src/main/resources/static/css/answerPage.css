@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.top{
+    position: fixed;
+    left: 0px;
+    top:0px;
+    width: 100%;
+    height: 3em;
+    background-color: #eeedef;
+
+    border-bottom: solid  0.5em;
+    border-color: white;
+    z-index: 1;
+
+}
+.top_content{
+    width: 75%;
+    height: 50px;
+    /*上下为零 左右自适应 有居中效果*/
+    margin: 0px auto;
+
+    color: black;
+    text-align: center;
+}
+
+.daohang{
+    filter:alpha(Opacity=80);-moz-opacity:0.5;opacity: 0.5;
+    background-color: #eeedef;
+    list-style-type: none;
+    position: fixed;
+    width: 15%;
+    height: 30em;
+    left: 0px;
+    top:3.5em;
+    /*float: left;*/
+}
+.daohang li{
+    font-size: 0.7em;
+    text-align:center;
+
+}
+.daohang a:link,a:visited{
+    text-decoration: none;
+    border-style: inset;
+    border-width: 0.3em;
+    border-color: #66CCFF;
+    border-radius: 1em;
+    line-height: 200%;
+    color: black;
+}
+
+
+.footing{
+    width: 100%;
+    height: 5em;
+    background-color: #eeedef;
+    margin: 0px auto;
+}
+
+.body{
+    margin-top: 0px;
+    margin-left: 15%;
+    width: 85%;
+    height: auto;
+    background-color: #66CCFF;
+    z-index: 2;
+}
+
+/*.body_img{
+    width: 100%;
+    height: 400px;
+    background-color: darkorange;
+}*/
+
+.body_content{
+    position: relative;
+    width: 100%;
+    height: 30em;
+    background-color:#66CCFF;
+    border-bottom: solid  0.5em;
+    border-color: white;
+    margin-top: 3.5em;
+    color: white;
+    padding: 1em;
+}
+
+.body_content .question{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.placeholder {
+    position: absolute;
+    display:block;
+    width:80%;   /*小于父级宽度的值*/
+    height:3.5em;   /*高度值为顶部固定块的高度*/
+    top: -3.5em;    /*值为顶部固定块的高度*/
+}
+
+.Option{
+    margin-top: 1em;
+    font-size: large;
+    font-weight: 500;
+    line-height: 1.5em;
+}

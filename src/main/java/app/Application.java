@@ -21,32 +21,32 @@ public class Application {
     private static final Logger log = LoggerFactory.getLogger(Application.class);
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class);
+        SpringApplication.run(Application.class, args);
     }
 
-    @Bean
-    public CommandLineRunner demo(ChoiceQuestionRepository repository,AnsRecordRepository arepository) {
-        return (args) -> {
-            // save a couple of
-//            repository.save(new User("aaa","bbbb","cccc","dddd","eeee",1));
-
-            log.info("Customers found with findAll():");
-            log.info("-------------------------------");
-            for (ChoiceQuestion question : repository.findAll()) {
-//                log.info(question.toString()+"\n");
-                System.out.println(question.toString());
-            }
-
-            for(AnsRecord ans:arepository.findAll()){
-                System.out.println(ans.toString());
-            }
-
-            log.info("");
-            // fetch an individual customer by ID
-            ChoiceQuestion question = repository.findOne(1L);
-            log.info(question.toString());
-
-        };
-    }
+//    @Bean
+//    public CommandLineRunner demo(ChoiceQuestionRepository repository,AnsRecordRepository arepository) {
+//        return (args) -> {
+//            // save a couple of
+////            repository.save(new User("aaa","bbbb","cccc","dddd","eeee",1));
+//
+//            log.info("Customers found with findAll():");
+//            log.info("-------------------------------");
+//            for (ChoiceQuestion question : repository.findAll()) {
+////                log.info(question.toString()+"\n");
+//                System.out.println(question.toString());
+//            }
+//
+//            for(AnsRecord ans:arepository.findAll()){
+//                System.out.println(ans.toString());
+//            }
+//
+//            log.info("");
+//            // fetch an individual customer by ID
+//            ChoiceQuestion question = repository.findOne(1L);
+//            log.info(question.toString());
+//
+//        };
+//    }
 
 }

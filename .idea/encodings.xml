@@ -3,9 +3,6 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/app/config/ManageApplicationConfig.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/templates/error.html" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/templates/index.html" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/templates/layout.html" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/templates/user" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/views/answerPage.html" charset="GBK" />
   </component>
 </project>
