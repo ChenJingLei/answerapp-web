@@ -10,4 +10,5 @@ import org.springframework.data.repository.query.Param;
 public interface ChoiceQuestionRepository extends CrudRepository<ChoiceQuestion, Long> {
 
     ChoiceQuestion findById(@Param("id") Long id);
+
 }

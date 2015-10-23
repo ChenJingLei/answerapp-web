@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="zh">
+    <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8"/>
+    <title>答题界面</title>
+</head>
+<body>
+<script>
+
+    var length = 2;
+    for (var i = 0; i < length; i++) {
+        document.write("aaaaaaaaaaaaaa");
+    document.write("\<p th:text=\"\'"+i+"题 \' \+ \$\{r"+i+"\}\"\>\<\/\p\>");
+    }
+</script>
+<!--<p th:text="'1题 ' + ${r1}"></p>-->
+
+<!--<p th:text="'2题 ' + ${r2}"></p>-->
+</body>
+</html>
